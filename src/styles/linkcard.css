@@ -1,0 +1,66 @@
+.link-card {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.12),
+    0 2px 4px rgba(0,0,0,0.08);
+
+  overflow: hidden;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.link-card:hover,
+.link-card:focus {
+  transform: scale(1.02);
+
+  box-shadow:
+    0 10px 26px rgba(0,0,0,0.2),
+    0 4px 10px rgba(0,0,0,0.1);
+
+  outline: none;
+}
+
+.link-card:active {
+  transform: scale(0.98);
+}
+
+/* image now defines the height */
+.link-card__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* overlay for text readability */
+.link-card__overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.05),
+    rgba(0,0,0,0.2)
+  );
+
+  pointer-events: none;
+}
+
+.link-card__title {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+
+  text-shadow: 0 1px 3px rgba(255,255,255,0.7);
+
+  padding: 0 12px;
+}
