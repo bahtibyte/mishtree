@@ -5,7 +5,7 @@ import "./styles/app.css";
 function App() {
   return (
     <div className="app">
-      <div className="app__signature" aria-hidden="true">Michelle</div>
+      <div className="app__signature" aria-hidden="true">mishelle</div>
       <main className="app__main">
         <ul className="link-list" role="list">
           {links.map((link, index) => (
