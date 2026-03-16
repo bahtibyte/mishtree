@@ -1,6 +1,6 @@
-function LinkCard({ title, url, image }) {
+function LinkCard({ title, url, image, event_name }) {
   const handleClick = () => {
-    if (window.gtag) {
+    if (window.gtag && event_name) {
       window.gtag("event", event_name);
     }
     window.open(url, "_blank", "noopener,noreferrer");

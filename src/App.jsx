@@ -17,6 +17,7 @@ function App() {
                 title={link.title}
                 url={link.url}
                 image={link.image}
+                event_name={link.event_name}
               />
             </li>
           ))}
