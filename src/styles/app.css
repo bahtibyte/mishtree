@@ -53,10 +53,12 @@ body {
 /* vertical signature on the background, behind content, scrolls with page */
 .app__signature {
   position: fixed;
-  right: -1.5rem;
+  right: -2.8rem;
   bottom: 0.25rem;
   z-index: 0;
   pointer-events: none;
+  width: 120px;
+  height: 284px;
 
   font-family: "Pinyon Script", cursive;
   font-size: 5rem;
