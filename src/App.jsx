@@ -13,12 +13,24 @@ function App() {
         <ul className="link-list" role="list">
           {links.map((link, index) => (
             <li key={index}>
-              <LinkCard
-                title={link.title}
-                url={link.url}
-                image={link.image}
-                event_name={link.event_name}
-              />
+              {link.url ? (
+                <LinkCard
+                  title={link.title}
+                  url={link.url}
+                  image={link.image}
+                  event_name={link.event_name}
+                />
+              ) : (
+                <article className="link-card" aria-label={link.title}>
+                  <img
+                    className="link-card__image"
+                    src={link.image}
+                    alt={link.title}
+                  />
+                  <span className="link-card__overlay" aria-hidden="true" />
+                  <span className="link-card__title">{link.title}</span>
+                </article>
+              )}
             </li>
           ))}
         </ul>

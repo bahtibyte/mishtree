@@ -17,6 +17,11 @@ const links = [
     image: "/images/clothing-tag.png",
     event_name: "drift_short_film_visit",
   },
+  {
+    title: "made with <3",
+    image: "/images/clothing-tag.png",
+    event_name: null,
+  },
 ];
 
 export default links;
