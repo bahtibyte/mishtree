@@ -20,9 +20,9 @@ body {
 
   background-image: url("/images/bg-overlay.png"), url("/images/background.png");
   background-position: left center, center;
-  background-size: 80% auto, cover;
-  background-repeat: repeat-y, no-repeat; /* overlay repeats vertically */
-  background-color: #e8eaef; /* fallback while image loads */
+  background-size: 80% auto, 100% auto;
+  background-repeat: repeat-y, repeat-y;
+  background-color: #e8eaef;
 
   display: flex;
   justify-content: center;
