@@ -21,7 +21,10 @@ function App() {
                   event_name={link.event_name}
                 />
               ) : (
-                <article className="link-card" aria-label={link.title}>
+                <article
+                  className="link-card link-card--static"
+                  aria-label={link.title}
+                >
                   <img
                     className="link-card__image"
                     src={link.image}
