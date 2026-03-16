@@ -4,9 +4,9 @@ import "./styles/app.css";
 
 function App() {
   return (
-    <>
-      <div className="app">
-        <main className="app__main">
+    <div className="app">
+      <div className="app__signature" aria-hidden="true">Michelle</div>
+      <main className="app__main">
         <ul className="link-list" role="list">
           {links.map((link, index) => (
             <li key={index}>
@@ -19,9 +19,7 @@ function App() {
           ))}
         </ul>
       </main>
-      </div>
-      <div className="app__signature" aria-hidden="true">Michelle</div>
-    </>
+    </div>
   );
 }
 

@@ -31,11 +31,12 @@ body {
   align-items: center;
 }
 
-/* vertical signature at viewport bottom-right (outside .app so padding doesn’t affect it) */
+/* vertical signature on the background, behind content, scrolls with page */
 .app__signature {
-  position: fixed;
-  right: 0;
-  bottom: 1rem;
+  position: absolute;
+  right: 0.25rem;
+  bottom: 0.25rem;
+  z-index: 0;
   pointer-events: none;
 
   font-family: "Pinyon Script", cursive;
@@ -48,6 +49,8 @@ body {
 }
 
 .app__main {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 320px; /* reduce for narrower cards (e.g. 340px, 400px) */
 }
