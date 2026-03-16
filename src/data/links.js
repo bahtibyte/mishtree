@@ -1,17 +1,17 @@
 const links = [
   {
-    title: "My YouTube",
-    url: "https://youtube.com",
+    title: "3.28 - 3.29 closet sale sign up",
+    url: "https://forms.gle/9meMZzL8sMe8xJfQA",
     image: "/images/clothing-tag.png",
   },
   {
-    title: "My Instagram",
-    url: "https://instagram.com",
+    title: "instagram - mishelle.ee",
+    url: "https://www.instagram.com/mishellel.ee",
     image: "/images/clothing-tag.png",
   },
   {
-    title: "My Twitter",
-    url: "https://twitter.com",
+    title: "youtube - drift short film",
+    url: "https://youtu.be/7XPD9Hph7YE?si=zTcICDLqsGxNLKyO",
     image: "/images/clothing-tag.png",
   },
 ];

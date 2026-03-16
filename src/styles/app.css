@@ -18,21 +18,42 @@ body {
   position: relative;
   min-height: 100vh;
 
-  background-image: url("/images/bg-overlay.png"), url("/images/background.png");
-  background-position: left center, center;
-  background-size: 80% auto, 100% auto;
-  background-repeat: repeat-y, repeat-y;
+  /* main SVG background only */
+  background-image: url("/images/background.svg");
+  background-position: top center;
+  /* SVG fits full width, no repeat */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   background-color: #e8eaef;
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+}
+
+/* blurred side fill for larger screens */
+@media (min-width: 768px) {
+  .app::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    background-image: url("/images/background.svg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    filter: blur(24px);
+    transform: scale(1.08);
+    opacity: 0.75;
+  }
 }
 
 /* vertical signature on the background, behind content, scrolls with page */
 .app__signature {
   position: fixed;
-  right: -1rem;
+  right: -1.5rem;
   bottom: 0.25rem;
   z-index: 0;
   pointer-events: none;
@@ -53,10 +74,25 @@ body {
   max-width: 320px; /* reduce for narrower cards (e.g. 340px, 400px) */
 }
 
+.app__logo {
+  position: relative;
+  z-index: 1;
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.app__logo img {
+  max-width: 300px;
+  width: 75vw;
+  height: auto;
+}
+
 .link-list {
   list-style: none;
-  margin: 0;
-  padding: 1.5rem 1rem 2rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
 
   display: flex;
   flex-direction: column;
