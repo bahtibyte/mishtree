@@ -1,6 +1,6 @@
 const links = [
   {
-    title: "3.28 - 3.29 closet sale sign up",
+    title: "4.18 - 4.19 closet sale interest form",
     url: "https://forms.gle/9meMZzL8sMe8xJfQA",
     image: "/images/i1.png",
     event_name: "closet_sale_sign_up",
